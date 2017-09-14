@@ -27,6 +27,8 @@ bindkey '^r' anyframe-widget-execute-history
 bindkey '^b' anyframe-widget-checkout-git-branch
 ## プロセス一覧をインクリメントサーチ & kill
 bindkey '^x^k' anyframe-widget-kill
+## deleteキー
+bindkey "^[[3~" delete-char
 
 # freqencyを考慮したファイル・フォルダ補完
 zplug "plugins/fasd", from:oh-my-zsh
