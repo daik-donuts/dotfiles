@@ -75,6 +75,10 @@ HISTFILE=~/.zsh_history
 HISTSIZE=6000000
 SAVEHIST=6000000
 
+## 実行したプロセスの消費時間が3秒以上かかったら
+## 自動的に消費時間の統計情報を表示する。
+REPORTTIME=3
+
 # 同時に起動したzshの間でヒストリを共有する
 setopt share_history
 
@@ -202,3 +206,10 @@ function _pip_completion {
 }
 compctl -K _pip_completion pip
 # pip zsh completion end
+
+dir=~/.oh-my-zsh/custom/plugins/zsh-completions/src
+if [ -e $dir ]; then
+    fpath=($dir $fpath)
+    plugins+=(zsh-completions)
+    autoload -U compinit && compinit
+fi
