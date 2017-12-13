@@ -35,6 +35,7 @@ zplug "plugins/fasd", from:oh-my-zsh
 
 # 新時代のcd
 zplug "b4b4r07/enhancd", use:init.sh
+ENHANCD_HOOK_AFTER_CD=l
 
 # git系のaliasがほしい
 zplug "plugins/git",   from:oh-my-zsh
@@ -134,6 +135,9 @@ alias sudo='sudo '
 # グローバルエイリアス
 alias -g L='| less'
 alias -g G='| grep'
+
+# cd後にls
+chpwd() { ls -lFh --color=auto }
 
 # pecoでzを使う
 function peco-z-search
