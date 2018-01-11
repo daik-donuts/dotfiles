@@ -5,12 +5,14 @@ set shiftwidth=4
 set cursorline
 set number
 set backspace=indent,eol,start
+set clipboard+=unnamed
 " vimrc に以下のように追記
 
 " プラグインが実際にインストールされるディレクトリ
 let s:dein_dir = expand('~/.cache/dein')
 " dein.vim 本体
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
+let mapleader = "\<Space>"
 
 " dein.vim がなければ github から落としてくる
 if &runtimepath !~# '/dein.vim'
@@ -26,7 +28,7 @@ if dein#load_state(s:dein_dir)
 
   " プラグインリストを収めた TOML ファイル
   " 予め TOML ファイル（後述）を用意しておく
-  let g:rc_dir    = expand('~/.vim/rc')
+  let g:rc_dir    = expand('~/dotfiles/.vim/rc/')
   let s:toml      = g:rc_dir . '/dein.toml'
   let s:lazy_toml = g:rc_dir . '/dein_lazy.toml'
 
@@ -82,6 +84,7 @@ function! s:my_cr_function()
 endfunction
 " <TAB>: completion.
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <silent> jj <ESC>
 " <C-h>, <BS>: close popup and delete backword char.
 inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
@@ -121,3 +124,11 @@ let g:airline_powerline_fonts = 1
 set laststatus=2
 
 syntax on
+
+" easy-motion prefix
+map <Leader> <Plug>(easymotion-prefix)
+set hlsearch
+
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
