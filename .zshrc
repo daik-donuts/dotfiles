@@ -40,6 +40,9 @@ ENHANCD_HOOK_AFTER_CD=l
 # git系のaliasがほしい
 zplug "plugins/git",   from:oh-my-zsh
 
+#
+zplug "rupa/z", use:"*.sh"
+
 # check コマンドで未インストール項目があるかどうか verbose にチェックし
 # false のとき（つまり未インストール項目がある）y/N プロンプトで
 # インストールする
