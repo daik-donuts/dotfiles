@@ -14,3 +14,4 @@ eval "$(pyenv init -)"
   eval "$(rbenv init -)"
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"
+export EDITOR=vim

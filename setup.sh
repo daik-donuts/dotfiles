@@ -43,11 +43,11 @@ done
 }
 
 initialize(){
-  curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh| zsh
+  curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 }
 
 if [ "$1" = "deploy" -o "$1" = "d" ]; then
     deploy
 elif [ "$1" = "init" -o "$1" = "i" ]; then
-    initalize
+    initialize
 fi
