@@ -35,12 +35,11 @@ zplug "plugins/fasd", from:oh-my-zsh
 
 # 新時代のcd
 zplug "b4b4r07/enhancd", use:init.sh
-ENHANCD_HOOK_AFTER_CD=l
 
 # git系のaliasがほしい
 zplug "plugins/git",   from:oh-my-zsh
 
-#
+# ファイル移動
 zplug "rupa/z", use:"*.sh"
 
 # check コマンドで未インストール項目があるかどうか verbose にチェックし
