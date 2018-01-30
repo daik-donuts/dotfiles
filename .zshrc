@@ -7,7 +7,8 @@ source ~/.zplug/init.zsh
 zplug chrissicool/zsh-256color
 
 # 自動補完
-zplug hchbaw/auto-fu.zsh, at:next, as:command
+# zplug hchbaw/auto-fu.zsh, at:next, as:command
+zplug b4b4r07/auto-fu.zsh, as:command
 
 # ヒストリ検索拡張
 zplug zsh-users/zsh-history-substring-search
