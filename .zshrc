@@ -1,7 +1,7 @@
 source ~/.zplug/init.zsh
 
 # コマンドラインハイライト auto-fuと相性が悪い
-# zplug "zsh-users/zsh-syntax-highlighting"
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
 
 # 色拡張
 zplug chrissicool/zsh-256color
