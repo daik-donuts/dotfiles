@@ -3,6 +3,10 @@ source ~/.zplug/init.zsh
 # コマンドラインハイライト auto-fuと相性が悪い
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 
+# syntax-highlightning、greenは暗いので明るくする
+zplug "~/dotfiles/zsh_highlight_color_change", from:local, defer:2
+
+
 # 色拡張
 zplug chrissicool/zsh-256color
 

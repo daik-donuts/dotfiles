@@ -1,0 +1,6 @@
+ZSH_HIGHLIGHT_STYLES[alias]=fg=010
+ZSH_HIGHLIGHT_STYLES[builtin]=fg=010
+ZSH_HIGHLIGHT_STYLES[function]=fg=010
+ZSH_HIGHLIGHT_STYLES[command]=fg=010
+ZSH_HIGHLIGHT_STYLES[precommand]=fg=010,underline
+ZSH_HIGHLIGHT_STYLES[hashed-command]=fg=010
