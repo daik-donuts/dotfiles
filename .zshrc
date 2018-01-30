@@ -177,8 +177,8 @@ zstyle ':completion:sudo:*' environ PATH="$SUDO_PATH:$PATH"
 autoload -U compinit
 compinit
 
-if [ -f $ZPLUG_REPOS/hchbaw/auto-fu.zsh/auto-fu.zsh ]; then
-    source $ZPLUG_REPOS/hchbaw/auto-fu.zsh/auto-fu.zsh
+if [ -f $ZPLUG_REPOS/b4b4r07/auto-fu.zsh/auto-fu.zsh ]; then
+    source $ZPLUG_REPOS/b4b4r07/auto-fu.zsh/auto-fu.zsh
     function zle-line-init () {
         auto-fu-init
     }
