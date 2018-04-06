@@ -121,9 +121,9 @@ setopt transient_rprompt
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
-alias l='ls -lFh --color=auto'
-alias la='ls -lAFh --color=auto'
-alias ll='ls -lG'
+alias l='gls -lFh --color=auto'
+alias la='gls -lAFh --color=auto'
+alias ll='gls -lG'
 
 alias rm='rm -i'
 alias cp='cp -i'
@@ -144,7 +144,7 @@ alias -g L='| less'
 alias -g G='| grep'
 
 # cd後にls
-chpwd() { ls -lFh --color=auto }
+chpwd() { gls -lFh --color=auto }
 
 # pecoでzを使う
 function peco-z-search
